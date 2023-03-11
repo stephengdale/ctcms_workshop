@@ -1,0 +1,14 @@
+molecule 5.fchk 
+load 5.fchk id scf5
+load 6.fchk id scf6
+load as "$scf6-$scf5" id diff6
+cube -5 -5 -5 5 5 5 50 50 50 file diff6.cube field diff6
+load 7.fchk id scf7
+load as "$scf7-$scf6" id diff7
+cube -5 -5 -5 5 5 5 50 50 50 file diff7.cube field diff7
+load 8.fchk id scf8
+load as "$scf8-$scf7" id diff8
+cube -5 -5 -5 5 5 5 50 50 50 file diff8.cube field diff8
+
+
+
