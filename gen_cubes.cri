@@ -2,23 +2,23 @@ molecule 5.fchk
 load 5.fchk id scf5
 load 6.fchk id scf6
 load as "$scf6-$scf5" id diff6
-cube -5 -5 -5 5 5 5 50 50 50 file diff6.cube field diff6
+cube -8 -8 -8 8 8 8 100 100 100 file diff6.cube field diff6
 load 7.fchk id scf7
 load as "$scf7-$scf6" id diff7
-cube -5 -5 -5 5 5 5 50 50 50 file diff7.cube field diff7
+cube -8 -8 -8 8 8 8 100 100 100 file diff7.cube field diff7
 load 8.fchk id scf8
 load as "$scf8-$scf7" id diff8
-cube -5 -5 -5 5 5 5 50 50 50 file diff8.cube field diff8
+cube -8 -8 -8 8 8 8 100 100 100 file diff8.cube field diff8
 load 97.fchk id scf97
 load 98.fchk id scf98
 load as "$scf98-$scf97" id diff98
-cube -5 -5 -5 5 5 5 50 50 50 file diff98.cube field diff98
+cube -8 -8 -8 8 8 8 100 100 100 file diff98.cube field diff98
 load 99.fchk id scf99
 load as "$scf99-$scf98" id diff99
-cube -5 -5 -5 5 5 5 50 50 50 file diff99.cube field diff99
+cube -8 -8 -8 8 8 8 100 100 100 file diff99.cube field diff99
 load 100.fchk id scf100
 load as "$scf100-$scf99" id diff100
-cube -5 -5 -5 5 5 5 50 50 50 file diff100.cube field diff100
+cube -8 -8 -8 8 8 8 100 100 100 file diff100.cube field diff100
 
 
 
